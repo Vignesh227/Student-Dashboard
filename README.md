@@ -1,3 +1,3 @@
 # Student-Dashboard
 
-⚠️The project is still in progress ⚠️
+⚠️The project is yet to be completed ⚠️
