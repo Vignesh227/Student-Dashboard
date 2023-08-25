@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/028dab96f2.js" crossorigin="anonymous"></script> 
+
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon-1.png' %}" type="image/x-icon">
+
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <a href="{% url 'index' %}" style="margin-left: 9.2%"><li>Home</li></a>
+                <a href="{% url 'index' %}"><li>Login</li></a>
+                <a href="{% url 'index' %}"><li>Contact us</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main">
+        
+    </section>
+
+</body>

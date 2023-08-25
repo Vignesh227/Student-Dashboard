@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dash.css' %}">
+
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/028dab96f2.js" crossorigin="anonymous"></script> 
+
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon-1.png' %}" type="image/x-icon">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <a href="{% url 'index' %}" style="margin-left: 9.2%"><li>Home</li></a>
+                <a href="{% url 'index' %}"><li>Login</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <section class="main"  onclick="closeNav()">
+        <h1 class="pointer-none">Student Dashboard: <span>Unleash</span>  Your Potential with Our Student Dashboard</h1>
+        <a href="#main-two"><button class="btn">Get Started</button></a>
+    </section>
+
+    <!-- Dashboards -->
+    <section class="main-two" id="main-two">
+        <span onclick="openNav()" id="open">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+
+        <div class="dash-nav" id="dash-nav">
+            <span onclick="closeNav()"  id="close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <h3 class="pointer-none">Departments</h3>
+            <h6 style="margin-top:1rem">Data&nbsp;Science</h6>
+            <h6>Info&nbsp;Technology</h6>
+        </div>
+        <div class="graph" id="graph"  onclick="closeNav()">
+            <h1 class="pointer-none">Overview</h1>
+            <div class="dashboards">
+
+                <h3>Total Students vs Marks</h3>
+                <img src="../static/images/bar.png" alt="" style="width: 600px;height:200px;">
+
+                <h3>Total Students vs Marks</h3>
+                <img src="../static/images/bar.png" alt="" style="width: 600px;height:200px;">
+
+                <h3>Total Students vs Marks</h3>
+                <img src="../static/images/bar.png" alt="" style="width: 600px;height:200px;">
+
+                <h3>Total Students vs Marks</h3>
+                <img src="../static/images/bar.png" alt="" style="width: 600px;height:200px;">
+
+                <h3>Total Students vs Marks</h3>
+                <img src="../static/images/bar.png" alt="" style="width: 600px;height:200px;">
+
+            </div>
+        </div>
+        
+    </section>
+    <div style="height: 100px;"></div>
+
+
+    <script src="{% static 'js/dash.js' %}"></script>
+</body>
+</html>

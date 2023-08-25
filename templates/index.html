@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/028dab96f2.js" crossorigin="anonymous"></script> 
+
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon-1.png' %}" type="image/x-icon">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <a href="{% url 'index' %}" style="margin-left: 9.2%"><li>Home</li></a>
+                <a href="{% url 'index' %}"><li>Login</li></a>
+                <a href="{% url 'contact' %}"><li>Contact us</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <section class="main">
+        <h1 class="pointer-none">Student Dashboard: <span>Unleash</span>  Your Potential with Our Student Dashboard</h1>
+        <a href="#main-two"><button class="btn">Get Started</button></a>
+    </section>
+
+    <!-- Dashboards -->
+    <section class="main-two" id="main-two">
+       
+        <div class="graph" id="graph">
+            <h1 class="pointer-none">Overview</h1>
+            <div class="dashboards">
+
+                <div class="dash-outer dashboards-row-1">
+                    <div class="dash-inner dashboards-row-1-col-1  row-1">
+                        <h3>Club Students</h3>
+                        <img src="../static/images/pie.png" alt="">
+                    </div>
+                    <div class="dash-inner dashboards-row-1-col-2  row-1">
+                        <h3>Events Attended</h3>
+                        <img src="../static/images/pie.png" alt="">
+                    </div>
+                    <div class="dash-inner dashboards-row-1-col-3  row-1">
+                        <h3>Events Attended</h3>
+                        <img src="../static/images/pie.png" alt="">
+                    </div>
+                </div>
+
+                <div class="dash-outer dashboards-row-2">
+                    <div class="dash-inner dashboards-row-2-col-1  row-2">
+                        <h3>No of students placed / Yr</h3>
+                        <img src="../static/images/pie.png" alt="">
+                    </div>
+                </div>
+
+                <div class="dash-outer dashboards-row-3">
+                    <div class="dash-inner dashboards-row-3-col-1  row-3">
+                        <h3>Hackathons</h3>
+                        <img src="../static/images/pie.png" alt="">
+                    </div>
+                    <div class="dash-inner dashboards-row-3-col-2  row-3">
+                        <h3>Symposium</h3>
+                        <img src="../static/images/pie.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer pointer-none">
+        Copyrights &copy; <span id="year"></span> Student Dashboard. All Rights Reserved
+    </footer>
+
+    <!-- Linking js file -->
+    <script src="{% static 'js/index.js' %}"></script>
+
+</body>
+</html>
